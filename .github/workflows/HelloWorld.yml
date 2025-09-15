@@ -1,0 +1,9 @@
+name: Hello-world
+on: push
+jobs:
+  Hellow-world-job:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: check out repo code
+        uses: actions/checkout@v4
+      - run: echo Noam_test

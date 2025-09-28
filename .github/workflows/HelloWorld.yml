@@ -7,3 +7,4 @@ jobs:
       - name: check out repo code
         uses: actions/checkout@v4
       - run: echo Noam_test
+      - run: echo "$(cat hello_world.txt)"

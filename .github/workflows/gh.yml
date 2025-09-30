@@ -1,0 +1,13 @@
+name: running-gh-commands
+on:
+  push:
+    paths: ".github/workflows/gh.yml"
+  workflow_dispatch:
+jobs:
+  gh-cli:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          env
+          gh --version
+          gh auth status

@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/github-script@v7 # enables running node js script to use API
         id: issue_script
-        name: running nondeJS script
+        name: running nodeJS script
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

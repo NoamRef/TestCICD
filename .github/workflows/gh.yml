@@ -6,8 +6,10 @@ on:
 jobs:
   gh-cli:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
-      - run: |
+      - run: | 
           env
           gh --version
           gh auth status

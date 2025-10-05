@@ -11,3 +11,7 @@ jobs:
           env
           gh --version
           gh auth status
+          gh repo list
+          gh issue list 
+          gh workflow list 
+          gh api /repos/:owner/:repo/actions/workflows
